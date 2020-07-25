@@ -2,13 +2,13 @@
 
 ## Quick Start
 
-First set a `GITHUB_TOKEN` with access to artifacts. Optionally set `RELEASE` to `branch1:branch2`. If a branch is omitted `master` is assumed. 
+Set `RELEASE` to `branch1:branch2`. If a branch is omitted `master` is assumed.
 
 Then `./deploy.sh` will build and release a slug from the given artifacts.
 
 ```
 $ export HEROKU_APP=grax-app
-$ heroku config:set GITHUB_TOKEN=<REDACTED> RELEASE=branch1:branch2
+$ heroku config:set RELEASE=branch1:branch2
 $ ./deploy.sh
 -----> Node.js app detected
 -----> Build
